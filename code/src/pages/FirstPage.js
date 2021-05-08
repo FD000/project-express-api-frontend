@@ -46,6 +46,7 @@ const FirstPage = () => {
     const searchMin = (e) => {
         e.preventDefault();
         setMin(e.target.value)
+        //setMax("")
     }
     
     // Maximum price 
@@ -56,6 +57,7 @@ const FirstPage = () => {
     const searchMax = (e) => {
         e.preventDefault();
         setMax(e.target.value)
+        //setMax("")
     }
 
     if (amount.length >= 1) {
@@ -64,7 +66,9 @@ const FirstPage = () => {
             myApi = `${myApi}&id=${id}`
         } else if(min.length >= 1) {
             myApi = `${myApi}&minPrice=${min}`
-        }
+        } else if(max.length >= 1) {
+            myApi = `${myApi}&maxPrice=${max}`
+        } 
        
     } else if (max.length >= 1) {
         myApi = `https://fethullah-week17-project-api.herokuapp.com/avocado?maxPrice=${max}`
