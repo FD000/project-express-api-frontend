@@ -123,7 +123,8 @@ const FirstPage = () => {
 
 
     return(
-        <div className="first">
+        <div className="container">
+            <section className="header-wrapper">
             <div className="header-text">
                 <h1>Welcome to Avocado Sales Data</h1>
                 
@@ -199,6 +200,10 @@ const FirstPage = () => {
             <div>
                 <h1># result: {apiLength}</h1>
             </div>
+
+            
+
+            </section>
 
 
             {(apiLength === 0)? 

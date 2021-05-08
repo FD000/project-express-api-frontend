@@ -17,16 +17,21 @@ code {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: red;
+  background-color: #a7bbc7;
   border: 5px solid black;
 }
 
 
-.first {
-  background-color: blue;
-  height: 50%;
-  width: 80%;
+.container {
+  background-color: #faf3f3;
+  height: 100%;
+  width: 100%;
   overflow:scroll;
+  
+}
+
+.header-wrapper {
+  background-color: #e1e5ea;
   padding: 20px;
 }
 
@@ -50,14 +55,15 @@ code {
 
 .result {
   border: 3px solid white;
+  padding: 10px;
 }
 
 
 @media(min-width: 1300px) {
-  .first {
+  .container {
 
    
-    background-color: yellow;
+    background-color: #faf3f3;
     height: 100%;
     width: 70%;
   }
