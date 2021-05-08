@@ -46,18 +46,16 @@ const FirstPage = () => {
     const searchMin = (e) => {
         e.preventDefault();
         setMin(e.target.value)
-        //setMax("")
     }
     
     // Maximum price 
     const maxPrice = (e) => {
         e.preventDefault()
-        
     }
+
     const searchMax = (e) => {
         e.preventDefault();
         setMax(e.target.value)
-        //setMax("")
     }
 
     if (amount.length >= 1) {
