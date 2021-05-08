@@ -17,8 +17,9 @@ code {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #a7bbc7;
+  background-color: #a7bbc7; 
   border: 5px solid black;
+  font-family: 'Roboto',sans-serif;
 }
 
 
@@ -31,17 +32,15 @@ code {
 }
 
 .header-wrapper {
-  background-color: #e1e5ea;
+  background-color: #da7f8f;
   padding: 20px;
+  color: white;
 }
 
 .input-section {
   display: row;
   align-items: center;
 }
-
-
-
 
 .data {
   border: 3px solid black;
@@ -54,8 +53,12 @@ code {
 }
 
 .result {
-  border: 3px solid white;
+  border-bottom: 3px solid white;
   padding: 10px;
+}
+
+.result span {
+  font-weight: bold;
 }
 
 
